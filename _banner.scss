@@ -1,0 +1,38 @@
+
+.banner {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    &-info {
+        width: 35%;
+    }
+    &-img {
+        width: 65%;
+        transform: translateX(50px);
+    }
+    &-heading {
+        font-size: 55px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+    &-heading span{
+        display: block;
+
+    }
+
+    &-desc{
+    display: block;
+    color: $gray-dark;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    }
+    &-links{
+        .btn:nth-child(1) {
+            margin-right: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+
+.footer {
+    display: flex;
+    margin-bottom: 50px;
+    &-left {
+        width: 40%;
+        &-image {
+            margin-bottom: 40px;
+        }
+        &-desc {
+            color: $gray-blur;
+
+            display: block;
+            max-width: 250px;
+            margin-bottom: 40px;
+        }
+        &-icon-gg {
+            cursor: pointer;
+            padding: 8px;
+            margin-right: 15px;
+            background-color: #FF7979;
+            color: $white-color;
+            border-radius: 50%;
+
+        }
+        &-icon-twitter {
+            cursor: pointer;
+            padding: 8px;
+            margin-right: 15px;
+            background-color: #79AFFF;
+            color: $white-color;
+            border-radius: 50%;
+
+        }
+        &-icon-ig {
+            cursor: pointer;
+            padding: 8px;
+            margin-right: 15px;
+            background-color: #FFB979;
+            color: $white-color;
+            border-radius: 50%;
+            
+        }
+    }
+    &-right {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        &-title {
+            color: $gray-blur;
+            margin-top: 30px;
+            transition: all .2s linear;
+
+        }
+        &-title:hover {
+            cursor: pointer;            
+            color: $primary-color;
+            transition: all .2s linear;
+        }
+    }
+}

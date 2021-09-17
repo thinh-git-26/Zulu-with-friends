@@ -1,0 +1,32 @@
+
+.header {
+    padding-top: 43px;
+    display: flex;
+    align-items: center;
+    &-auth {
+        margin-left: auto;
+    }
+    
+    &-logo{
+        display: block;
+        margin-right: 180px;
+    }
+    &-menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    &-menu-item:not(:nth-child(1)){
+            margin-left: 75px;
+        }
+    &-menu-link {
+            color: $gray-dark;
+            transition: color .25s ease-in-out;
+            &:hover{
+                color: $primary-color;
+            }
+    }
+    
+}
+
+

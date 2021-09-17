@@ -1,0 +1,75 @@
+
+.client {
+    margin-bottom: 100px;
+    &-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item{
+        border: 1px solid $gray-light;
+        border-radius: 20px;
+        width: calc(33.33% - 33px);
+        text-align: center;
+        padding: 50px 35px;
+        transition: all .2s linear;
+
+    }
+    
+    &-item:hover {    
+        box-shadow: 0px 0px 30px 7px rgba(0, 0, 0, 0.06);
+        border: 1px solid transparent;
+    }
+    &-item:hover .client-item-avatar {
+        transform: scale(1.1);
+        transition: all .2s linear;
+ 
+    }
+    &-item-avatar{
+        margin: 0 auto;
+        transition: all .2s linear;
+        border-radius: 50%;
+    }
+    &-name {
+        color: $gray-dark;
+        font-size: 25px;
+        padding: 30px 0  10px 0;
+    }
+    &-job-name {
+        color: $gray-blur;
+        font-size: 16px;
+        display: block;
+        position: relative;
+        margin-bottom: 80px;
+    }
+    &-job-name::after {
+        content: "";
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        height: 1.2px;
+        width: 100%;
+        background-color: $gray-light;
+    }
+    &-desc {
+        display: block;
+        color: $gray-blur;
+        margin-bottom: 50px;
+    }
+
+    &-icon-star {
+        color: #FFCB46;
+
+    }
+    &-footer {  
+        margin-top: 50px;
+        text-align: center;
+        &-icon {  
+            font-size: 20px;  
+            color: $gray-blur;
+            &:first-child {
+                margin-right: 20px;
+            }
+        }
+    }
+
+}

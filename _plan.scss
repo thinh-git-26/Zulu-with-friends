@@ -1,0 +1,91 @@
+
+.plan {
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom:100px ;
+    }
+    &-item {
+        // margin-bottom: 100px;
+        border: 1px solid $gray;
+        border-radius: 20px;
+        padding: 70px 40px 120px 40px;
+        line-height: 1.4;
+        position: relative;
+        transition: all .2s linear;
+
+    }
+    &-item:hover {    
+        box-shadow: 0px 0px 30px 7px rgba(0, 0, 0, 0.06);
+        border: 1px solid transparent;
+
+    }
+    &-item:hover .plan-btn {
+        background-color: $primary-color;
+        color: $white-color;
+
+    }
+    &-name {
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+    &-month {
+        font-size: 60px;
+    }
+    &-unit {
+        font-size: 20px;
+    }
+    &-symbol {
+        font-size: 30px;
+        position: relative;
+        top: -24px;
+        left: 4px;
+    }
+    &-desc{
+        display: block;
+        color: $gray-blur;
+        padding-top: 100px;
+        position: relative;
+        padding-right: 40px;
+    }
+    &-desc::after {
+        content: "";
+        position: absolute;
+        height: 1.2px;
+        width: 100%;
+        background-color: $gray;
+        top: 60px;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+    &-feature {
+        padding-bottom: 30px;
+        padding-top: 60px;
+        font-size: 26px;
+        &-item {
+            color: $gray-blur;
+            padding-bottom: 20px;
+        }
+    }
+    &-label{
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        color: $white-color;
+        background-color: #ff7780;
+        position: absolute;
+        padding:10px  20px;
+        top: 0;
+        right: 0;
+    }
+    &-btn {
+        position: absolute;
+        display: block;
+        left: 50%;
+        bottom: 40px;
+        transform: translateX(-50%);
+        transition: all .2s linear;
+        // text-transform: capitalize;
+
+        
+    }
+}

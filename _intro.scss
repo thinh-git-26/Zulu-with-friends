@@ -1,0 +1,18 @@
+.intro {
+    display: flex;
+    margin-bottom: 100px;
+    &-image {
+        margin-left: auto;
+        width: 55%;
+    }
+    &-content {
+        margin-top: 80px;
+        padding-right: 70px;
+        width: 40%;
+        &--desc {
+            display: block;
+            color: $gray-blur;
+            margin-bottom: 50px;
+        }
+    }
+}
